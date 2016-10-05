@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple calci</title>
+  </head>
+<body>
+enter number 1: <input type="number" id="num1" required autofocus>
+enter number 2: <input type="number" id="num2" required>
+<input type="button" value="add" onclick="add();">
+<input type="button" value="sub" onclick="sub();">
+<input type="button" value="mul" onclick="mul();">
+<input type="button" value="div" onclick="div();">
+  
+  <div id="result">
+    
+  </div>
+  <script>
+    function add()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var sum=+n1 + +n2;
+      alert("sum is "+sum);
+      document.getElementById("result").innerText=sum;
+    }
+  </script>
+  <script>
+   function sub()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var sum=+n1 - +n2;
+      alert("sub is "+sub);
+      document.getElementById("result").innerText=sub;
+    }
+  </script>
+   <script>
+   function mul()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var sum=+n1 * +n2;
+      alert("mul is "+mul);
+      document.getElementById("result").innerText=mul;
+    }
+  </script>
+   <script>
+   function div()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var sum=+n1 - +n2;
+      alert("div is "+div);
+      document.getElementById("result").innerText=div;
+    }
+  </script>
+</body>
+</html>
